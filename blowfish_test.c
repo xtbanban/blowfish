@@ -39,7 +39,7 @@ void main(void) {
   L = 12, R = 21;
   Blowfish_Encrypt(&ctx, &L, &R);
   printf("\n");
-  printf("%08lX %08lX\n", (long unsigned int)L, (long unsigned int)R);
+  printf("%08lX  %08lX\n", (long unsigned int)L, (long unsigned int)R);
   Blowfish_Decrypt(&ctx, &L, &R);
   printf("\n");
   printf("%d %d\n", (long unsigned int)L, (long unsigned int)R);
